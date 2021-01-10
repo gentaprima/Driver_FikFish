@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ReportFragment"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_activity"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:textColor="@color/black"
+        android:fontFamily="@font/capriola"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riwayat Pengiriman Bulan Desember"
+        tools:ignore="HardcodedText" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_history"
+        android:layout_marginStart="@dimen/margin_low"
+        tools:ignore="RtlCompat">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

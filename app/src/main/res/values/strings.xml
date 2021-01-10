@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FikFish Driver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="email_genta">gentaprima600@gmail.com</string>
+    <string name="let_s_start_with">Let\'s start with</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="silahkan_tunggu">Silahkan Tunggu</string>
+</resources>

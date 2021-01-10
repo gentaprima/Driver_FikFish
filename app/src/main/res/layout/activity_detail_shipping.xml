@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/toolbar" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_low"
+                android:layout_marginTop="@dimen/margin_activity"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Detail Pengiriman"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+                tools:ignore="HardcodedText,RtlCompat" />
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginStart="@dimen/margin_low"
+                android:layout_marginTop="@dimen/margin_low"
+                android:layout_marginEnd="@dimen/margin_low"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/margin_low"
+                        android:fontFamily="@font/poppins"
+                        android:text="Maps"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageMaps"
+                        app:layout_constraintStart_toStartOf="@+id/imageMaps"
+                        app:layout_constraintTop_toBottomOf="@+id/imageMaps"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription,RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Pemesan : "
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="@+id/imageView"
+                        tools:ignore="HardcodedText,RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Genta Prima Syahnur"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="@+id/imageView"
+                        tools:ignore="HardcodedText,RtlCompat" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/margin_low"
+                        android:background="#ddd"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Estimasi Jarak :"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        tools:ignore="HardcodedText,RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/tv_jarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="5.6KM"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        tools:ignore="HardcodedText,RtlCompat" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:layout_marginEnd="@dimen/margin_low"
+                        android:background="#ddd"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_jarak" />
+
+                    <TextView
+                        android:id="@+id/tv_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:layout_marginTop="@dimen/margin_low"
+                        android:layout_marginEnd="@dimen/margin_low"
+                        android:text="Jl. Kesadaran No.12A, RT.3/RW.1, Cipinang Muara, Kecamatan Jatinegara, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13420, Indonesia Kota Jakarta Timur "
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view2"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imageMaps"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:layout_marginLeft="@dimen/margin_low"
+                        android:layout_marginTop="@dimen/margin_activity"
+                        android:src="@drawable/ic_baseline_explore_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_alamat"
+                        tools:ignore="ContentDescription,RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/imagePhone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_local_phone_24"
+                        app:layout_constraintEnd_toStartOf="@+id/imageSms"
+                        app:layout_constraintStart_toEndOf="@+id/imageMaps"
+                        app:layout_constraintTop_toTopOf="@+id/imageMaps"
+                        tools:ignore="ContentDescription,RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/margin_low"
+                        android:fontFamily="@font/poppins"
+                        android:text="Telepon"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imagePhone"
+                        app:layout_constraintStart_toStartOf="@+id/imagePhone"
+                        app:layout_constraintTop_toBottomOf="@+id/imagePhone"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/imageSms"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="@dimen/margin_low"
+                        android:src="@drawable/ic_baseline_sms_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageMaps"
+                        tools:ignore="ContentDescription,RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/margin_low"
+                        android:fontFamily="@font/poppins"
+                        android:text="SMS"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageSms"
+                        app:layout_constraintStart_toStartOf="@+id/imageSms"
+                        app:layout_constraintTop_toBottomOf="@+id/imageSms"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Detail Pesanan"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="@dimen/margin_activity"
+                android:layout_marginStart="@dimen/margin_low"
+                android:layout_marginEnd="@dimen/margin_low"
+                android:textColor="@color/black"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_pesanan"
+                android:layout_marginTop="@dimen/margin_low"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Detail Penagihan"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="@dimen/margin_activity"
+                android:layout_marginStart="@dimen/margin_low"
+                android:layout_marginEnd="@dimen/margin_low"
+                android:textColor="@color/black"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/margin_low"
+                android:layout_marginEnd="@dimen/margin_low"
+                android:layout_marginTop="@dimen/margin_low"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardElevation="0dp"
+                android:layout_marginBottom="@dimen/margin_activity"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_low"
+                        android:fontFamily="@font/poppins"
+                        android:text="Biaya Tambahan : "
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText,RtlCompat,SmallSp" />
+
+                    <TextView
+                        android:id="@+id/tv_biaya"
+                        android:layout_marginEnd="@dimen/margin_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Tidak ada Biaya Tambahan"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText,RtlCompat" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <in.shadowfax.proswipebutton.ProSwipeButton
+            android:id="@+id/btn_slide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_activity"
+            android:layout_marginTop="@dimen/margin_activity"
+            android:layout_marginEnd="@dimen/margin_activity"
+            app:bg_color="@color/colorPrimary"
+            app:btn_radius="10"
+            app:btn_text="Kirim Paket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_delay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/margin_activity"
+            android:layout_marginTop="@dimen/margin_low"
+            android:layout_marginEnd="@dimen/margin_activity"
+            android:layout_marginBottom="@dimen/margin_low"
+            android:background="@drawable/btn_stroke"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tunda Pengiriman"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_slide"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="26dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

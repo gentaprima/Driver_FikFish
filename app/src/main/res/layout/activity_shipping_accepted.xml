@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.shipping.activity.ShippingAcceptedActvity"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <include layout="@layout/toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Penerima Pesanan"
+        tools:ignore="HardcodedText"
+        android:fontFamily="@font/capriola"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_activity"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:textSize="16sp"
+        android:layout_marginEnd="@dimen/margin_activity"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:background="@drawable/bg_input"
+        android:hint="Nama Penerima ..."
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,RtlSymmetry"
+        android:paddingLeft="@dimen/margin_low"
+        android:inputType="text"
+        android:id="@+id/edt_penerima"
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/margin_activity"
+        android:layout_marginEnd="@dimen/margin_activity"
+        android:layout_marginTop="@dimen/margin_activity"
+        android:background="@drawable/bg_button"
+        android:text="Serahkan Pesanan"
+        tools:ignore="HardcodedText"
+        android:textColor="@color/colorWhite"
+        />
+
+</LinearLayout>
